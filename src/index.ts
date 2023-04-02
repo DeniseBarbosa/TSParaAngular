@@ -62,5 +62,12 @@ let soma: number = addNumero(7, 8);
 console.log(soma);
 console.log(addOla("Denise"));
 
+// Funções Multi Tipos
+//não é recomendado utilizar any
+function ChamarFone(fone:string|number): number | string {
+    return fone;
+};
+console.log(ChamarFone("denise"));
+
 
 
