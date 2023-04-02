@@ -4,3 +4,6 @@ instalando o TypeScript localmente no projeto > a diferença que vai ficar apena
 npm install typescript -D
 sera preciso instalar a pasta src manualmente
 na raiz do projeto > md src
+um comando recomendado servidor local que entende typescript que não precisa ficar rodando o comando 
+a todo momento > confid feita no package.json lembrando que o -D é local 
+npm install ts-node-dev -D
