@@ -191,3 +191,14 @@ function ExibirNome(alvo:any): any {
 class Funcionario{}
 @ExibirNome
 class Gerente{}
+
+//Criar um decorador mais util 
+function VersaoApi(versao:string) {
+    return(alvo: any)=>{
+        Object.assign(alvo.prototype, {__version: versao, __nome:"Denise"});
+    }
+}
+@VersaoApi("1.10")
+class Api{}
+const api = new Api();
+//console.log(api.__nome);
