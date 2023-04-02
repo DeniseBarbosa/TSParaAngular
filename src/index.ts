@@ -180,3 +180,14 @@ console.log(stgArray);
 // const stgArray = ConcatenarArray<string[]>(["Dog","Cat"], ["Passarinho","Tamandua"])
 // console.log(numArray);
 // console.log(stgArray);
+
+// O principio dos decorators
+function ExibirNome(alvo:any): any {
+    console.log(alvo);
+}
+//decorar
+//para parar de dar erro do @ > lembre-se de habilitar isso no tsconfig.jason > experimentalDecorators
+@ExibirNome
+class Funcionario{}
+@ExibirNome
+class Gerente{}
