@@ -122,7 +122,8 @@ console.log(P.dizerOla());
 
 //class é uma forma para reaproveitar e recriar
 class Personagem {
-    nome?: string;
+    //private só pode ser acessada por dentro da class
+   private nome?: string;
     forca: number;
     habilidade: number;
     //dica > se o nome é opcional eu não tenho obrigação de passar no construtor
@@ -137,3 +138,8 @@ class Personagem {
 }
 
 const p1 = new Personagem(10, 98); 
+
+//modificadores de acesso > Data Modifiers
+//public consegue acessar for da class
+//private acessar apenas dentro da class
+// protected acessar dentro da class e sub-class
