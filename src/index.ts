@@ -37,4 +37,7 @@ let dados: string[] = ["felipe", "ana", "adriana"];
 //2° pode ser feita assim
 let dados2: Array<string> = ["felipe", "ana", "adriana"];
 
+// Trabalhando com Arrays de Multi Types armazena ddois tipos diferentes> porem não aceita boleano
+let infos: (string | number)[]=["Denise", 2, "Prinsloo"];
+
 
