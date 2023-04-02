@@ -156,3 +156,11 @@ p1.habilidade = 12;
 //public consegue acessar for da class
 //private acessar apenas dentro da class
 // protected acessar dentro da class e sub-class
+
+
+
+// O Problema que o Generics resolve
+function ConcatenarArray(...itens:any[]):any[] {
+    return new Array().concat(...itens);
+}
+const numArray = ConcatenarArray([1,6], [8]);
