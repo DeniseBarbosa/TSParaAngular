@@ -75,5 +75,27 @@ async function getBancodados(id:number): Promise<string> {
     return "Denise";
 };
 
+// Interfaces e comparação com o type (type x interface)
+// a Interface é parecida com o type
+// algumas pessoas utiliza interface do que o type
+// a interface é utilizada quando vamos trabalhar com class
+// iterface é um contrato > tem que seguir o contrato
+// readonly > não pode ser alterado vai ser apenas leitura quando iimprir
+type robor ={
+  readonly  id: number | string;
+    nome: string;
+};
+interface robor2{
+    id: number,
+    nome: string,
+};
+const rob : robor ={
+    id: 1,
+    nome: "megaman",
+};
+
+console.log((rob.nome="Denise"));
+//aqui vai dar um erro no id
+//console.log((rob.id=1));
 
 
