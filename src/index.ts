@@ -126,7 +126,7 @@ class Personagem {
     forca: number;
     habilidade: number;
     //dica > se o nome é opcional eu não tenho obrigação de passar no construtor
-    constructor( forca: number, habilidade: number){
+    constructor(forca: number, habilidade: number){
        // this.nome = nome;
         this.forca = forca;
         this.habilidade = habilidade;
