@@ -164,3 +164,19 @@ function ConcatenarArray(...itens:any[]):any[] {
     return new Array().concat(...itens);
 }
 const numArray = ConcatenarArray([1,6], [8]);
+const stgArray = ConcatenarArray(["Dog","Cat"], ["Passarinho","Tamandua"])
+numArray.push("naruto");
+console.log(numArray);
+console.log(stgArray);
+
+// Utilizando Generics na prática > resolver o problema de cima (corrigindo)
+
+// function ConcatenarArray<T>(...itens:T[]):T[] {
+//     return new Array().concat(...itens);
+// }
+// //retornar um vetor de number
+// const numArray = ConcatenarArray<Number[]>([1,6], [8]);
+// //retornar um vetor de strings
+// const stgArray = ConcatenarArray<string[]>(["Dog","Cat"], ["Passarinho","Tamandua"])
+// console.log(numArray);
+// console.log(stgArray);
