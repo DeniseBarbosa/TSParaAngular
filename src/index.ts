@@ -119,3 +119,21 @@ class Pessoa implements robor {
 
 const P = new Pessoa(1, "bruxa");
 console.log(P.dizerOla());
+
+//class é uma forma para reaproveitar e recriar
+class Personagem {
+    nome?: string;
+    forca: number;
+    habilidade: number;
+    //dica > se o nome é opcional eu não tenho obrigação de passar no construtor
+    constructor( forca: number, habilidade: number){
+       // this.nome = nome;
+        this.forca = forca;
+        this.habilidade = habilidade;
+    }
+    atacar( ) : void{
+        console.log(`Aatcar com ${this.forca} pontos`)
+    }
+}
+
+const p1 = new Personagem(10, 98); 
