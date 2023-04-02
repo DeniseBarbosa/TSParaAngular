@@ -123,21 +123,34 @@ console.log(P.dizerOla());
 //class é uma forma para reaproveitar e recriar
 class Personagem {
     //private só pode ser acessada por dentro da class
-   private nome?: string;
+    nome: string;
     forca: number;
     habilidade: number;
     //dica > se o nome é opcional eu não tenho obrigação de passar no construtor
-    constructor(forca: number, habilidade: number){
+    constructor(forca: number, habilidade: number, nome: string ){
        // this.nome = nome;
         this.forca = forca;
         this.habilidade = habilidade;
+        this.nome = nome;
     }
     atacar( ) : void{
         console.log(`Aatcar com ${this.forca} pontos`)
     }
 }
+//class Personagem > class pai ou super class
+//sub-class
+//class filha
+class Magia extends Personagem{
+    PontosMagia: number
+    constructor(nome: string, forca: number, habilidade: number, PontosMagia: number){
+        //class super
+        super(forca, habilidade, nome)
+        this.PontosMagia = PontosMagia;
+    }
+}
 
-const p1 = new Personagem(10, 98); 
+const p1 = new Personagem(10, 98, "denise"); 
+p1.habilidade = 12;
 
 //modificadores de acesso > Data Modifiers
 //public consegue acessar for da class
