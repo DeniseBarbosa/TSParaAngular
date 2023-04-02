@@ -40,4 +40,9 @@ let dados2: Array<string> = ["felipe", "ana", "adriana"];
 // Trabalhando com Arrays de Multi Types armazena ddois tipos diferentes> porem não aceita boleano
 let infos: (string | number)[]=["Denise", 2, "Prinsloo"];
 
+// Trabalhando com Tuplas > tem que ser feito na exata na ordem que foi definida
+//ela é mais inteligente, interessante
+let boleto:[string, number, number] = ["agua conta", 95.55, 85.5];
+
+
 
