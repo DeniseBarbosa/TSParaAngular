@@ -14,5 +14,22 @@ let retorno:void
 //aceita qualquer coisa > pode retornar qualquer coisa > um objeto, nulo, texto ou vazio
 let retornoView:any = "s"
 
+//objeto >obs: não é uma boa prática passa objetos dessa maneira;
+let produto:object = {
+    nome:"Denise",
+    cidade:"SP",
+    idade: 20,
+};
+//objeto totalmente tipado dinamico > mais recomendado a usar
+type ProdutoLoja ={
+    nome:string;
+    preco:number;
+    unidades:number;
+}
+let meuProduto: ProdutoLoja ={
+    nome:"Tenis",
+    preco: 89.99,
+    unidades: 1,
+};
 
 
