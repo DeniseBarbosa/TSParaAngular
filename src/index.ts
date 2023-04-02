@@ -31,5 +31,10 @@ let meuProduto: ProdutoLoja ={
     preco: 89.99,
     unidades: 1,
 };
+// arrays > existe 2 maneiras de declaração
+//1° pode ser feia assim
+let dados: string[] = ["felipe", "ana", "adriana"];
+//2° pode ser feita assim
+let dados2: Array<string> = ["felipe", "ana", "adriana"];
 
 
