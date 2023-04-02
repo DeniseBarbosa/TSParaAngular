@@ -1,0 +1,6 @@
+criar um projeto do tipo node na raiz
+npm init -y
+instalando o TypeScript localmente no projeto > a diferença que vai ficar apenas dentro desse projeto
+npm install typescript -D
+sera preciso instalar a pasta src manualmente
+na raiz do projeto > md src
