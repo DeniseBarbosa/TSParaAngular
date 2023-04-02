@@ -69,5 +69,11 @@ function ChamarFone(fone:string|number): number | string {
 };
 console.log(ChamarFone("denise"));
 
+//Funções Async > assicrona > esperar alguma coisa
+//vai retornar uma string
+async function getBancodados(id:number): Promise<string> {
+    return "Denise";
+};
+
 
 
