@@ -44,5 +44,9 @@ let infos: (string | number)[]=["Denise", 2, "Prinsloo"];
 //ela é mais inteligente, interessante
 let boleto:[string, number, number] = ["agua conta", 95.55, 85.5];
 
+// Trabalhando com Dates
+let aniversario: Date = new Date("2022-12-01 05:00")
+console.log(aniversario.toString());
+
 
 
