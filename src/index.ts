@@ -84,6 +84,7 @@ async function getBancodados(id:number): Promise<string> {
 type robor ={
   readonly  id: number | string;
     nome: string;
+    dizerOla(): string;
 };
 interface robor2{
     id: number,
@@ -92,6 +93,9 @@ interface robor2{
 const rob : robor ={
     id: 1,
     nome: "megaman",
+    dizerOla: function (): string {
+       return "";
+    }
 };
 
 console.log((rob.nome="Denise"));
@@ -99,3 +103,19 @@ console.log((rob.nome="Denise"));
 //console.log((rob.id=1));
 
 
+// Quando usar interfaces?
+// usar com for utilizar class
+class Pessoa implements robor {
+    id: string | number;
+    nome: string;
+    constructor(id: string|number, nome: string) {
+        this.id = id;
+        this.nome = nome;
+    }
+    dizerOla(): string {
+        return "Denise";
+    }
+}
+
+const P = new Pessoa(1, "bruxa");
+console.log(P.dizerOla());
